@@ -26,7 +26,7 @@ paths:
           description: An paged array of pets
           headers:
             x-next:
-              description: A link to the next page of responses
+              description: A link to the next page of responses when you want to get them then you CAN!
               schema:
                 type: string
           content:
