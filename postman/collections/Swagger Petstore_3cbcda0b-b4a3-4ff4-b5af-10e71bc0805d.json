@@ -23,7 +23,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/pets?limit=-24439982",
+							"raw": "{{baseUrl}}/pets?limit=-100",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -33,7 +33,7 @@
 							"query": [
 								{
 									"key": "limit",
-									"value": "-24439982",
+									"value": "-100",
 									"description": "How many items to return at one time (max 100)"
 								}
 							]
