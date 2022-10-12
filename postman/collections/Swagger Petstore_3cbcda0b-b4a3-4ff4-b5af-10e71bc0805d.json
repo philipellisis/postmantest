@@ -9,7 +9,7 @@
 			"name": "pets",
 			"item": [
 				{
-					"name": "List all pets",
+					"name": "List all pets that are old",
 					"id": "cc34aadd-f630-4b3c-a845-611d2e45ef89",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -32,9 +32,9 @@
 							],
 							"query": [
 								{
+									"description": "How many items to return at one time (max 100)",
 									"key": "limit",
-									"value": "-100",
-									"description": "How many items to return at one time (max 100)"
+									"value": "-100"
 								}
 							]
 						}
@@ -70,11 +70,13 @@
 									"disabled": false,
 									"description": "A link to the next page of responses",
 									"key": "x-next",
-									"value": "Ut ullamco sunt est labore"
+									"value": "Ut ullamco sunt est labore",
+									"enabled": true
 								},
 								{
 									"key": "Content-Type",
-									"value": "application/json"
+									"value": "application/json",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -109,7 +111,8 @@
 							"header": [
 								{
 									"key": "Content-Type",
-									"value": "application/json"
+									"value": "application/json",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -165,7 +168,8 @@
 							"header": [
 								{
 									"key": "Content-Type",
-									"value": "text/plain"
+									"value": "text/plain",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -194,7 +198,8 @@
 							"header": [
 								{
 									"key": "Content-Type",
-									"value": "application/json"
+									"value": "application/json",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -228,7 +233,6 @@
 							],
 							"variable": [
 								{
-									"id": "b05959ce-ec5e-4de4-b3e3-61640a28459f",
 									"key": "petId",
 									"value": "Ut ullamco sunt est labore",
 									"description": "(Required) The id of the pet to retrieve"
@@ -267,7 +271,8 @@
 							"header": [
 								{
 									"key": "Content-Type",
-									"value": "application/json"
+									"value": "application/json",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -304,7 +309,8 @@
 							"header": [
 								{
 									"key": "Content-Type",
-									"value": "application/json"
+									"value": "application/json",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -319,10 +325,9 @@
 	],
 	"variable": [
 		{
-			"id": "dac67f26-c782-4ebe-ae54-3fba173d6665",
+			"id": "023eb49c-3664-4b6e-b608-685e855c6486",
 			"key": "baseUrl",
-			"value": "http://petstore.swagger.io/v1",
-			"type": "string"
+			"value": "http://petstore.swagger.io/v1"
 		}
 	]
 }
