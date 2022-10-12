@@ -60,6 +60,20 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Error"
+    put:
+      summary: Replace a pet
+      operationId: replacePets
+      tags:
+        - pets
+      responses:
+        201:
+          description: Null response
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
   /pets/{petId}:
     get:
       summary: Info for a specific pet
