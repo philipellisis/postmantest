@@ -21,6 +21,13 @@ paths:
           schema:
             type: integer
             format: int32
+        - name: filter
+          in: filter
+          description: filter on certain json objects
+          required: false
+          schema:
+            type: integer
+            format: int32
       responses:
         200:
           description: An paged array of pets
