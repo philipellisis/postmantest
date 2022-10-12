@@ -22,7 +22,7 @@ paths:
             type: integer
             format: int32
         - name: filter
-          in: filter
+          in: query
           description: filter on certain json objects
           required: false
           schema:
